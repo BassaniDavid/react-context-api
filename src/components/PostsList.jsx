@@ -1,5 +1,11 @@
+import { useContext } from "react"
+import PostsContext from "../contexts/PostsContext"
+import { Link } from "react-router-dom"
+
 
 export default function PostsList() {
+
+    const { posts } = useContext(PostsContext)
 
     return (
         <>
